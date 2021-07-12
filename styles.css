@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+    }
+#logo{
+    background-color: springgreen;
+    background-image: linear-gradient(to top, #ff0844 0%,#ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.navbar{
+    background: #000;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+.fa-gem{
+    margin-right: 0.5rem;
+}
+
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.nav_bar_item{
+    height: 80px;
+}
+.navbar_links{
+    color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding:  0 1rem;
+    height: 100%;
+}
+.nav_bar_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    width: 100%;
+
+}
+.buttons{
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+padding: 10px 20px;
+height: 100%;
+width:  100%;
+border: none;
+outline: none;
+border-radius: 4px;
+background: royalblue;
+color:#fff;
+}
+.navbar_links:hover{
+    color: springgreen;
+    transition: all 0.3s ease;
+}
+.buttons:hover {
+    background: springgreen;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width: 960px) {
+    .navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+    }
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 1000px;
+        opacity: 0;
+        transition: all 0.5 ease;
+        height: 50vh;
+        z-index: -1;
+    }
+}
