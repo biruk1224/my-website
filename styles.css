@@ -11,7 +11,7 @@
 }
 
 .navbar {
-  background: #151515;
+  background:black;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -33,10 +33,10 @@
   padding: 0 50px;
 
 }
-#logo {
-  
+
+ #logo {
   background-color: #f5f5f5;
-  background-size: 25%;
+  background-size: 2%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -45,13 +45,17 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
-}
+  font-size: 0.1rem;
+} 
 
 .navbar_menu {
   display: flex;
   align-items: center;
   list-style: none;
+}
+.navbar .navbar_container .a .img{
+  width: 50px;
+  height: 40px;
 }
 
 .navbar_item {
@@ -78,27 +82,10 @@
   width: 100%;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px 20px;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: greenyellow;
-  color: #fff;
-  transition: all 0.3s ease;
-}
-.buttons:hover{
-  background:#FFFF00;
-}
+
 
 .navbar_links:hover {
-  color: 	#FFFF00;
+  color: 	#FF9900;
   transition: all 0.3s ease;
 }
 
@@ -141,26 +128,8 @@ margin-right: 0;
   font-size: 40px;
   margin: 5px 0;
 }
-.home .home-content .text-3 span{
-  color: crimson;
-  font-weight: 500;
-}
-.home .home-content a{
-  display: inline-block;
-  background: crimson;
-  color: #000;
-  font-size: 25px;
-  padding: 12px 36px;
-  margin-top: 20px;
-  font-weight: 400;
-  border-radius: 6px;
-  border: 2px solid crimson;
-  transition: all 0.3s ease;
-}
-.home .home-content a:hover{
-  color: crimson;
-  background: none;
-}
+
+
 /* About me */
 section.aboutme{
   padding-bottom: 350px;
@@ -236,7 +205,8 @@ pre code .text{
 }
 
 .skills .title::after{
-  content: "what i know";
+  content: "nmap -sV -O";
+  font-size: medium;
 }
 .skills .skills-content .column{
   width: calc(50% - 30px);
@@ -441,12 +411,16 @@ section .title::after{
   transform: translateX(-50%);
 }
 .footercontainer .m{
-  padding-bottom: 100px;
+  padding-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: grey;
+  margin: 0;
   
 }
 .footercontainer{
-  background: #111;
-  padding: 35px 23px;
+  background: black;
+  padding: 15px 12px;
   color: #fff;
   text-align: center;
  
@@ -454,11 +428,12 @@ section .title::after{
 
   .pad{
     padding: 5px;
+    color: #fff;
   }
 
 @media screen and (max-width: 960px) {
   .navbar{
-    background: #131313;
+    background: black;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -526,11 +501,11 @@ section .title::after{
    right: 5%;
    transform: translate(5%,20%);
  }
- .nav_bar_button{
-   padding-bottom: 1.2rem;
- }
- 
- .navbar_toggle .bar{
+ .img{
+   width: 10px;
+   height: 25px;
+
+} .navbar_toggle .bar{
    display: block;
    cursor: pointer;
   }
