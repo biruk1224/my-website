@@ -92,7 +92,7 @@
 /* home section styling */
 .home{
   display: flex;
-  background: url("w.gif") no-repeat center;
+  background: url("back.gif") no-repeat center;
   height: 100vh;
   color: #000;
   
@@ -147,6 +147,10 @@ font-size: large;
 .aboutme .max-width .title{
   padding-top: 20px;
 }
+.aboutme .title::after{
+  content: "who i am";
+  font-size: medium;
+}
 
 .border {
 
@@ -190,6 +194,9 @@ pre code .text{
     justify-content: space-between;
 }
 /* skills section styling */
+.bar{
+  color: #FF9900;
+}
 .skills .skills-content{
   padding:60px 0px;
 
@@ -238,10 +245,11 @@ pre code .text{
 }
 .skills .skills-content .left a:hover{
   color: black;
-  background: none;
+  background: #FF9900;
 }
 .skills .skills-content .right .bars{
   margin-bottom: 15px;
+
 }
 .skills .skills-content .right .info{
   display: flex;
@@ -265,7 +273,7 @@ pre code .text{
   height: 100%;
   left: 0;
   top: 0;
-  background: black;
+  background:#FF9900;
 }
 .skills-content .right .html::before{
   width: 40%;
@@ -322,6 +330,10 @@ pre code .text{
   font-weight: 700;
   color:black;
   
+}
+.contact .title::after{
+  content: "ping me";
+  font-size: medium;
 }
 .contact .contact-content .info .sub-title{
   color: #333;
@@ -384,8 +396,9 @@ align-items: center;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: black;
-  background: none;
+  color: #000;
+  background: #FF9900;
+  
 }
 /* footer section styling */
 
@@ -412,7 +425,7 @@ section .title::after{
 }
 .footercontainer .m{
   padding-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 700;
   color: grey;
   margin: 0;
