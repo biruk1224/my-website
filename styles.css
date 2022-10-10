@@ -327,8 +327,8 @@ background-color: #43A6C6;
 }
 
 
-.skills-content .right .line java::before{
-  width: 80%;
+.skills-content .right .java::before {
+    width: 80%;
 }
 
 .skills-content .right .html::before{
