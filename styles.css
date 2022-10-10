@@ -325,6 +325,10 @@ background-color: #43A6C6;
   top: 0;
   background:#FF9900;
 }
+.skills-content .right .java::before{
+  width: 60%;
+}
+
 .skills-content .right .html::before{
   width: 60%;
 }
